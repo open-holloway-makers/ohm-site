@@ -1,0 +1,37 @@
+<html ng-app="ohmApp">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="javascript/ohm.js"></script>
+</head>
+
+<body ng-controller="mainController">
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/#/">*</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#open"><i class="fa fa-home"></i> Open Source</a>
+					</li>
+					<li><a href="#contribute"><i class="fa fa-home"></i> Contribute</a>
+					</li>
+					<li><a href="#ongoing"><i class="fa fa-home"></i> Ongoing Projects</a>
+					</li>
+					<li><a href="#transient"><i class="fa fa-home"></i> Transient Projects</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="main">
+		<div ng-view></div>
+	</div>
+</body>
+
+</html>
