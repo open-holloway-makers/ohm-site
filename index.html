@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html ng-app="ohmApp">
 
 <head>
@@ -10,28 +11,38 @@
 </head>
 
 <body ng-controller="mainController">
-	<header>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="/#/">*</a>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="ohm-header-wrap">
+					&#x2126;
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#open"><i class="fa fa-home"></i> Open Source</a>
-					</li>
-					<li><a href="#contribute"><i class="fa fa-home"></i> Contribute</a>
-					</li>
-					<li><a href="#ongoing"><i class="fa fa-home"></i> Ongoing Projects</a>
-					</li>
-					<li><a href="#transient"><i class="fa fa-home"></i> Transient Projects</a>
-					</li>
-				</ul>
 			</div>
-		</nav>
-	</header>
-	<div id="main">
-		<div ng-view></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="ohm-menu-item">OPEN SOURCE</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="ohm-menu-item">CONTRIBUTE</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="ohm-menu-item">ONGOING</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="ohm-menu-item">RECURRING</div>
+			</div>
+		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+
+
 </body>
 
 </html>
