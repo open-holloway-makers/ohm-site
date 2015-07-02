@@ -2,41 +2,49 @@
 <html ng-app="ohmApp">
 
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize.css/">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="javascript/ohm.js"></script>
+	<title>&#x2126; OPEN HOLLOWAY MAKERS &#x2126;</title>
 </head>
 
 <body ng-controller="mainController">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="ohm-header-wrap">
-					&#x2126;
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-3">
-				<div class="ohm-menu-item">OPEN SOURCE</div>
-			</div>
-			<div class="col-xs-3">
-				<div class="ohm-menu-item">CONTRIBUTE</div>
-			</div>
-			<div class="col-xs-3">
-				<div class="ohm-menu-item">ONGOING</div>
-			</div>
-			<div class="col-xs-3">
-				<div class="ohm-menu-item">RECURRING</div>
+	<div class="ohm-header-wrap">
+		<div class="ohm-header-wrap-title">
+			<div class="ohm-header-wrap-text"><a href="#/"><span class="ohm-link"></span>
+				<h1>&#x2126;</h1>
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid">
+		<div class="row ohm-menu">
+			<div class="col-xs-3">
+				<div class="ohm-menu-item"><a href="#/open"><span class="ohm-link"></span>OPEN SOURCE</a>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="ohm-menu-item"><a href="#/contribute"><span class="ohm-link"></span>CONTRIBUTE</a>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="ohm-menu-item"><a href="#/ongoing"><span class="ohm-link"></span>ONGOING</a>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="ohm-menu-item"><a href="#/transient"><span class="ohm-link"></span>RECURRING</a>
+			</div>
+		</div>
+	</div>
+	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="ohm-post-block col-md-6 col-md-offset-3">
 				<div ng-view></div>
 			</div>
 		</div>
